@@ -16,15 +16,11 @@ require_once 'header.php';
     <link href="style/style.css" rel="stylesheet" media="all">
 </head>
 <body>
-<div class="page-wrapper bg-red p-t-180 p-b-100 font-robo">
-        <div class="wrapper wrapper--w960">
-            <div class="card card-2">
-                <div class="card-heading"></div>
-                <div class="card-body">
+<br><br><br><hr><br><br>
+                <div class="p-t-30">
+                    <h2 class="title">Cadastrar Usuários</h2><br><br><br>
+                </div>
                 <form name="cadUsuario" id="cadUsuario" method="post">
-                        <div class="p-t-30">
-                            <h2 class="title">Usuário</h2><br><br><br>
-                        </div>
                         <div class="input-group">
                             <input class="input--style-2" type="text" placeholder="Login" id="login" name="login" value="<?php echo isset($usuario) ? $usuario->getLogin() : ''; ?>" >
                             <input type="hidden" name="id" id="id" value="<?php echo isset($usuario) ? $usuario->getId() : ''; ?>" />
